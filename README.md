@@ -1,6 +1,6 @@
 # GitHub Action for Rust and MUSL
 
-Action provides an environment with stable Rust 1.50, MUSL and the following targets:
+Action provides an environment with stable Rust, MUSL and the following targets:
 - x86_64-unknown-linux-musl
 - aarch64-unknown-linux-musl
 
@@ -26,7 +26,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build-musl
-      uses: gmiam/rust-musl-action@master
+      uses: jean-dfinity/rust-musl-action@master
       with:
         args: cargo build --target $BUILD_TARGET --release
     - uses: actions/upload-artifact@v2
