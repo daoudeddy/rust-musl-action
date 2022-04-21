@@ -1,4 +1,4 @@
-name: 'rust-static-build'
+name: 'rust-stable-static-build'
 description: 'Rust static build using musl'
 runs:
   using: 'docker'
