@@ -8,7 +8,7 @@ LABEL com.github.actions.description="Provides a Rust MUSL environment"
 LABEL com.github.actions.icon="settings"
 LABEL com.github.actions.color="orange"
 
-RUN rustup target add --toolchain beta x86_64-unknown-linux-musl
+RUN rustup target add x86_64-unknown-linux-musl
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
